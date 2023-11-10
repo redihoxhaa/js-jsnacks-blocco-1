@@ -5,21 +5,15 @@
 
 let totaleNumeri = 0;
 const elencoNumeri = [];
-let ordineNumero = 1;
 
-for (let i = 0; i < 10; i++) {
-    const numeroUtente = Number(prompt(`Inserisci il tuo ${ordineNumero}° numero`));
+for (let i = 1; i <= 10; i++) {
+    const numeroUtente = Number(prompt(`Inserisci il tuo ${i}° numero`));
     elencoNumeri.push(numeroUtente);
+    console.log(`Il ${i}° numero che hai inserito è ${elencoNumeri[i - 1]}`);
     totaleNumeri += numeroUtente;
-    ordineNumero++;
 }
-
-ordineNumero = 1;
-
-for (let counter = 0; counter < 10; counter++) {
-    console.log(`Il ${ordineNumero}° numero che hai inserito è ${elencoNumeri[counter]}`);
-    ordineNumero++;
+if (isNaN(totaleNumeri)) {
+    console.log("Hai inserito un valore non numerico");
+} else {
+    console.log("La somma dei numeri è " + totaleNumeri);
 }
-
-
-console.log("La somma dei numeri è " + totaleNumeri);
