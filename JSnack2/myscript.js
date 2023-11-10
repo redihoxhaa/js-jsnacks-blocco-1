@@ -4,7 +4,7 @@
 const parola1 = prompt("Scrivi la prima parola");
 const parola2 = prompt("Scrivi la seconda parola");
 
-if (parola1.length > parola2.length) {
+if (parola1.length < parola2.length) {
     console.log(parola1);
     console.log(parola2);
 } else {
