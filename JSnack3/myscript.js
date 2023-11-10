@@ -14,5 +14,12 @@ for (let i = 0; i < 10; i++) {
     ordineNumero++;
 }
 
-console.log("I numeri che hai inserito sono " + elencoNumeri);
+ordineNumero = 1;
+
+for (let counter = 0; counter < 10; counter++) {
+    console.log(`Il ${ordineNumero}° numero che hai inserito è ${elencoNumeri[counter]}`);
+    ordineNumero++;
+}
+
+
 console.log("La somma dei numeri è " + totaleNumeri);
