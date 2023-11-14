@@ -6,7 +6,7 @@ const n = Number(prompt("Inserisici il numero di array da generare"));
 for (let i = 0; i < n; i++) {
     const array = [];
     for (j = 0; j < 10; j++) {
-        randomNumber = Math.floor(Math.random() * 100) + 1;
+        let randomNumber = Math.floor(Math.random() * 100) + 1;
         array.push(randomNumber);
     }
     console.log(`L'array ${i + 1} è composta da ${array}`);
